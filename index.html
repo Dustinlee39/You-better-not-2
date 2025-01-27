@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clickable Image to Video</title>
+    <title>Direct Video Link</title>
 </head>
 <body>
-    <h1>Embedded Image Linking to Video</h1>
-    <!-- Link the embedded image to the video file -->
-    <a href="video.mp4" target="_blank">
-        <img src="image.png" alt="Embedded Clickable Image" style="width:100%;max-width:600px; border: 1px solid #ccc;">
-    </a>
-    <p>Click the embedded image above to view the video.</p>
+    <h1>Watch the Video</h1>
+    <!-- Display and link the video directly -->
+    <video controls style="width:100%;max-width:600px;">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <p>If the video does not play, <a href="video.mp4" target="_blank">click here</a> to open it directly.</p>
 </body>
 </html>
